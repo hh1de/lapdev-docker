@@ -1,0 +1,1 @@
+https://github.com/lapce/lapdev/releases/download/v0.1.0/lapdev-ws_0.1.0-1_amd64.deb
