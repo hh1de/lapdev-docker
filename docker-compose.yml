@@ -16,7 +16,7 @@ services:
 
   # lapdev in a docker container, our image
   lapdev:
-    image: lapdev:latest
+    image: hh1de/lapdev:latest
     container_name: lapdev
     environment:
     # set environment variables
@@ -35,7 +35,7 @@ services:
 
   # lapdev-ws in a docker container, our image too
   lapdev-ws:
-    image: lapdev-ws:latest
+    image: hh1de/lapdev-ws:latest
     # you can number the names for multiple lapdev-ws instances
     container_name: lapdev-ws1
     environment:
