@@ -1,4 +1,3 @@
-
 #  Lapdev, but even easier
 
   
@@ -11,6 +10,7 @@ The problem with it is, that there's no official Docker version, which is why i 
 
   
   
+
 
 #  How to run it
 
