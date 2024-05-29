@@ -28,3 +28,12 @@ The only thing you should look out for, is to set the hostname of the workspace 
 
 # License
 This project is licensed under AGPLv3 as well.
+
+
+
+
+# Additional
+
+Hi, i'm rather inexperienced and young with all of this, so git, github, Dockerfiles and licensing. But i'm trying my best.
+I also don't know if i'll finish or maintain this project.
+If you have or see any issues or want to contact me, use the issues tab (i think that's the best way but even here, im not certain :O).
