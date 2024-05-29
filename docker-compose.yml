@@ -1,13 +1,47 @@
 version: '3.8'
 
 services:
+  # normal postgres image, made to fit our needs with environment variables
   postgres:
     image: postgres:latest
     container_name: ${PG_NAME}
-    env_file:
-      - stack.env
     environment:
+    # create our user and db for lapdev, will also be used in the lapdev environment variables
       POSTGRES_USER: ${PG_USER}
       POSTGRES_PASSWORD: ${PG_PASS}
+      POSTGRES_DB: lapdev
     volumes:
+    # make db data persistent, used by lapdev
       - ${PG_PATH}:/var/lib/postgresql/data
+
+  # lapdev in a docker container, our image
+  lapdev:
+    image: lapdev:latest
+    container_name: lapdev
+    environment:
+    # set environment variables
+      - PG_USER=${PG_USER}
+      - PG_PASS=${PG_PASS}
+      - PG_HOST=${PG_NAME}
+    # i suggest setting these two ports to the same port that they will be accessed by the end user, so if it's behind a proxy on port 80/443, set these ports, even if you expose a different port
+      - HTTP_PORT=80
+      - HTTPS_PORT=443
+      - SSH_PORT=${LAPDEV_SSH}
+    ports:
+    # you can set these to whatever you want, just make sure they align with the environment variables
+      - "${LAPDEV_HTTP}:80"
+      - "${LAPDEV_HTTPS}:443"
+      - "${LAPDEV_SSH}:${LAPDEV_SSH}"
+
+  # lapdev-ws in a docker container, our image too
+  lapdev-ws:
+    image: lapdev-ws:latest
+    # you can number the names for multiple lapdev-ws instances
+    container_name: lapdev-ws1
+    environment:
+    # set ports
+      - WS_PORT=${WS_PORT}
+      - INTER_WS_PORT=${INTER_WS_PORT}
+    volumes:
+    # specify persistent data
+      - ${WS_DATA}:/etc/containers
