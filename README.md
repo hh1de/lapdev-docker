@@ -8,6 +8,9 @@ Lapdev (original under AGPLv3 from this [github repo: lapcelapdev](https://githu
 
 The problem with it is, that there's no official Docker version, which is why i decided to go ahead and make Docker images based on Lapdev (my builds are based on this [github repo: lapce/lapdev](https://github.com/lapce/lapdev))
 
+[Docker hub: lapdev](https://hub.docker.com/r/hh1de/lapdev)
+[Docker hub: lapdev-ws](https://hub.docker.com/r/hh1de/lapdev-ws)
+
   
   
 
