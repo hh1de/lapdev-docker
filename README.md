@@ -2,11 +2,11 @@
 
   
 
-Lapdev ([github repo](https://github.com/lapce/lapdev)) is a .devcontaineir compatible selfhosted solution for pre-configured Dev environments and serves as a good alternative to GitHub Codespaces etc...
+Lapdev (original under AGPLv3 from this [github repo](https://github.com/lapce/lapdev)) is a .devcontaineir compatible selfhosted solution for pre-configured Dev environments and serves as a good alternative to GitHub Codespaces etc...
 
   
 
-The problem with it is, that there's no official Docker version, which is why i decided to go ahead and make Docker images based on Lapdev ([github repo](https://github.com/lapce/lapdev))
+The problem with it is, that there's no official Docker version, which is why i decided to go ahead and make Docker images based on Lapdev (my builds are based on: [github repo: lapce/lapdev](https://github.com/lapce/lapdev))
 
   
   
@@ -22,3 +22,9 @@ The problem with it is, that there's no official Docker version, which is why i 
 Your interface will be accessible on the machine's ip with your chosen ports.
 From there on, you can just follow the guide at [docs.lap.dev](https://docs.lap.dev/installation/quickstart#cluster-initiation). 
 The only thing you should look out for, is to set the hostname of the workspace host to the name you gave your lapdev-ws docker container (only if it's from the same docker-compose of course).
+  
+  
+
+
+# License
+This project is licensed under AGPLv3 as well.
