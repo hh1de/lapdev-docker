@@ -3,11 +3,11 @@
 
   
 
-Lapdev ([github repo](github%20repo)) is a .devcontaineir compatible selfhosted solution for pre-configured Dev environments and serves as a good alternative to GitHub Codespaces etc...
+Lapdev ([github repo](https://github.com/lapce/lapdev)) is a .devcontaineir compatible selfhosted solution for pre-configured Dev environments and serves as a good alternative to GitHub Codespaces etc...
 
   
 
-The problem with it is, that there's no official Docker version, which is why i decided to go ahead and make Docker images based on Lapdev ([github repo](github%20repo))
+The problem with it is, that there's no official Docker version, which is why i decided to go ahead and make Docker images based on Lapdev ([github repo](https://github.com/lapce/lapdev))
 
   
   
