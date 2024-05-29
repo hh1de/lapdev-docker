@@ -14,6 +14,7 @@ The problem with it is, that there's no official Docker version, which is why i 
 
 #  How to run it
 
+(lapdev-ws doesn't work yet, so you should update the docker-compose and remove lapdev-ws. You have to run lapdev-ws some other way until i have a working image for it.)
   Use `git clone https://github.com/hh1de/lapdev-docker.git`, then run `cd lapdev-docker`.
   Or you could also just copy-paste the contents of the .env and the docker-compose.yml.
   
@@ -35,5 +36,5 @@ This project is licensed under AGPLv3 as well.
 # Additional
 
 Hi, i'm rather inexperienced and young with all of this, so git, github, Dockerfiles and licensing. But i'm trying my best.
-I also don't know if i'll finish or maintain this project.
+I also don't know if i'll finish or maintain this project, and how possible an image will be after lapdev added VM functionality (as stated on their github).
 If you have or see any issues or want to contact me, use the issues tab (i think that's the best way but even here, im not certain :O).
