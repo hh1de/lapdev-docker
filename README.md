@@ -2,7 +2,7 @@
 
   
 
-Lapdev (original under AGPLv3 from this [github repo: lapcelapdev](https://github.com/lapce/lapdev)) is a .devcontaineir compatible selfhosted solution for pre-configured Dev environments and serves as a good alternative to GitHub Codespaces etc...
+Lapdev (original under AGPLv3 from this [github repo: lapce/lapdev](https://github.com/lapce/lapdev)) is a .devcontaineir compatible selfhosted solution for pre-configured Dev environments and serves as a good alternative to GitHub Codespaces etc...
 
   
 
